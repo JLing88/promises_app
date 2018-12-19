@@ -1,0 +1,10 @@
+<h1>Promises</h1>
+
+  <% @promises.each do |promise| %>
+  <ul>
+    <li> <%= link_to "Promise-#{promise.id}", promise_path(promise) %>
+    <li> <%= promise.person %> </li>
+    <li> <%= promise.status %> </li>
+    <li> <%= promise.promise %> </li>
+  </ul>
+  <% end %>
